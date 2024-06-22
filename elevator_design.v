@@ -139,11 +139,13 @@ begin
                                    door<=0 ;
                                    idle<=0 ;
                            end
+               // if it reaches max_request floor then changing its direction to down 
               else if (max_request==current_floor)
                           begin
                              up<=0 ;
                              down<=1 ;
                           end 
+               // if it reaches min_request floor then changing its direction to up 
               else if (min_request==current_floor)
                           begin
                              down<=0 ;
